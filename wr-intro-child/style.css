@@ -1,0 +1,393 @@
+/*
+Theme Name: dochka WR Nitro
+Theme URI: http://www.woorockets.com/themes/nitro
+Author: WooRockets Team
+Author URI: http://www.woorockets.com/
+Description: Nitro - the only WordPress eCommerce theme you will need for any WooCommerce projects. Nitro theme comes with ready to use layouts for different ecommerce industries such as fashion, electronics, furniture, digital, sports, jewelry and other. Nitro represents what WooCommerce customers want to see in a theme including intuitive design (UX), robust performance (loading speed) and eCommerce functionalities (boosting sales).
+Version: 1.0.5
+Template: wr-nitro
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wr-nitro
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-header, custom-background, custom-menu, editor-style, featured-images, microformats, post-formats
+
+The stylesheets of Nitro are located in assets/woorockets/css.
+IMPORTANT : If you write your CSS code below, it will be deleted when you'll update the theme.
+*/
+@import url("../wr-intro/style.css");
+
+
+/* Для отображения на карточках товаров надписи "Бесплатно",
+    небходимо закоментировать следующую инструкцию.
+    */
+    .product__badge.free {
+      display: none;
+    }
+
+
+    h1 b, h2 b{
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 30px;
+    }
+    #tab-description h1, #tab-description h2{
+      line-height: 30px;
+      font-size: 24px;
+      margin: 0 0 24px;
+    }
+    #tab-description h2 a{
+      color: #2f0aec;
+    }
+
+    
+
+    .advocat-button .button, #callback input[type="submit"]{
+      background: linear-gradient(to bottom, #74ade3 5%, #3556ba 100%);
+      border:none;
+      display: block;
+      margin-bottom:10px; 
+    }
+    .advocat-button .button:hover, #callback input[type="submit"]:hover{
+     background: linear-gradient(to bottom, #3556ba 5%, #74ade3 100%);
+   }
+   .widget-style-1 .mgt30 .widget {
+     position: relative;
+     padding: 0px; 
+     background-color: transparent !important;
+     border: none;      
+   }
+   .widget-style-1 .mgt30 .more a{
+     position:absolute;
+     bottom: 5px;
+     left:5px;
+     font-size:19px;
+     color:#fff;
+   }
+   .widget-style-1 .mgt30 .more a:hover{
+    opacity:.8;
+  }
+
+
+  /*Найти в php и убрать их отображение из html на страницах page.php . slug ../product/name */
+  .p-single-nav{
+    display:none;
+  }
+  .p-meta > .availability{
+    display: none;
+  }
+  /*style for breadcrumbs on page of products */
+  .row.site-title__p0{
+    padding-bottom: 0;
+  }
+
+  span a, h1 a, h2 a, h3 a, h4 a, h5 a, a:not(.menu-item-link){
+    text-decoration:underline;
+  }
+  .header-phone-number a{
+      color: #5f5f5f;
+      text-decoration: none;
+    }
+
+  /* grid */
+  .col-sm-6{
+    width: 50%;
+    float: left;
+  }
+
+  #meta-category{
+    min-width: 0;
+    width: auto;
+  }
+  .product-share{
+    padding-right: 65px;
+  }
+  #report_abuse{
+    display: none;
+  }
+  .closed{
+    display: none !important;
+  }
+  .advocat-modal{
+    position: fixed;
+    /* display: none; */
+    width: 600px;
+    max-width: 100%;
+    height: 400px;
+    max-height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+  }
+  .advocat-modal.closed {
+    display: none;
+  }
+  .advocat-modal .close-button {
+    position: absolute;
+    /* don't need to go crazy with z-index here, just sits over .modal-guts */
+    z-index: 1;
+    top: 10px;
+    /* needs to look OK with or without scrollbar */
+    right: 10px;
+    border: 0;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .modal-overlay {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .wrapper .header-outer{
+    /* z-index: 0; */
+  }
+
+  .wpb_animate_when_almost_visible{
+    opacity: 1 !important;
+  }
+
+  .product__image{
+    width: 150px;
+  }
+
+  .product__image img {
+    width: 100%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    object-fit: cover;
+    height: 150px;
+    object-position: 50% 10%;
+  }
+
+
+
+  #breadcrumbs a{
+    color: #646464;
+  }
+  #breadcrumbs a:hover{
+    opacity: 0.8;
+  }
+
+  /* hide header search link for woocommerce page */
+  .is-home #header-link-search.header-home{
+    display: block;
+  }
+  #header-link-search.header-home{
+    display: none;
+  }
+
+  .wrapper-head{
+    margin-left: -1px;
+    -webkit-transform: translateX(1px);
+    -moz-transform: translateX(1px);
+    -ms-transform: translateX(1px);
+    -o-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  .home .wpcf7{
+    padding: 0;
+  }
+  .single .wpcf7{
+    min-height: 300px;
+    padding: 15px;
+  }
+  #wpcf7-f6499-o1.wpcf7{
+    min-height: 0;
+    padding: 0;
+  }
+
+  .wpcf7-form{
+    display: flex;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+  }
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-basis: 50%; */
+    width: 50%;
+    justify-content:space-between;
+  }
+
+  .your-name, .your-tel{
+    flex-basis:48%;
+    width: 150px;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    margin-bottom: 10px;
+  } 
+  .your-name{
+    margin-right: 10px;
+  }
+  .contact-form__name, .contact-form__phone{
+    width: 100%;
+  }
+  .your-message{
+    width:100%;
+    /* height: 30px; */
+  }
+
+  .contact-form__message, .contact-form__button{
+    width: 100%;
+  }
+
+  .wpcf7-form .contact-form__button{
+   font-size: 11px;
+   line-height: 45px;
+   padding: 0 ;
+   text-align: center;
+ }
+
+ .your-message textarea{
+  height: 50px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+/* #shop-detail .wpcf7-form{
+    width: 60%;
+    float: right;
+    padding: 20px 0; 
+    } */
+    /* #shop-detail .contact-form textarea  */
+    .contact-form textarea 
+    {
+      height: 50px;
+      margin: 20px 0;
+    }
+    .contact-form__button{
+      background-image:linear-gradient(to bottom, #74ade3 5%, #3556ba 100%);   
+    }
+    .contact-form__button:hover{
+      background-image:linear-gradient(to bottom, #3556ba 5%, #74ade3 100%);
+    }
+
+
+    #header-call .wpcf7-form{ position:relative; } 
+    #header-call .wpcf7-form .wpcf7-validates-as-tel{ background: transparent; } 
+    #header-call .wpcf7-form .wpcf7-submit{ position: absolute; 
+      top: 0; right: 0; 
+      width: 40px; height: 39px; 
+      background: url(http://wp.rishennyae.com/wp-content/uploads/2017/06/feedback.png) no-repeat;
+      background-position: center;
+      border:none;
+      font-size:0;
+    }
+    .form-callBack .wpcf7-form .wpcf7-submit:hover{
+      background-color:transparent !important;
+      opacity:.8;
+    }
+    #shop-detail .contact-form__name, #shop-detail .contact-form__phone,
+    .wpcf7-form .contact-form__name:not([type="submit"]):not([type="button"]):not(.submit):not(.button):not(.extenal-bdcl),
+    .wpcf7-form .contact-form__phone:not([type="submit"]):not([type="button"]):not(.submit):not(.button):not(.extenal-bdcl),
+    .wpcf7-form .contact-form__message, .wpcf7-form .form-call-tel:not([type="submit"]):not([type="button"]):not(.submit):not(.button):not(.extenal-bdcl)
+    {
+      /* width: 140px; */
+      padding: 10px;
+      background-color: #fff  !important;
+      border-color: #ebebeb  !important;
+      border-radius: 3px;
+    }
+
+    body{
+      position: relative;
+    }
+    .copyright{
+      position: absolute;
+      left: 0;bottom: 0;
+      height: 30px;
+      width: 100%;
+      background: #FFF;
+    }
+    .p-single-images img{
+      width: 330px;
+      height: 330px;
+    }
+
+    /*style for mobile*/
+    /*На мобилках перекрывает сгенерированные стили в index.php*/
+/* .header .hb-s1i1 #logo-mobile{
+  max-width: 250px;
+  } */
+  .only-mobile-show{
+    display: none !important;
+  }
+  .only-mobile-hide{ 
+  }
+
+  @media only screen
+  and (min-device-width : 320px) 
+  and (max-device-width : 768px) {
+
+    .container .only-mobile-show{
+      display: block !important;
+    }
+    .only-mobile-hide{
+      display: none; 
+    }
+    .only-mobile-show .vc_column-inner {
+      padding-top: 0 !important;
+    }
+    /*form*/
+    .flex{
+      width: 100%;
+    }
+    .contact-form__button{
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .advocat-button .button{
+      width: 100%;
+    }
+
+    #shop-detail .wpcf7 {
+      background-position: 50%!important;
+      min-height: 240px;
+    }
+    /*woocommerce product info*/
+    .product-share{
+      padding-right: 0;
+    }
+    .style-2 .product-tabs .woocommerce-tabs{
+      margin-top: 0;
+    }
+
+    /*woocommerce page of products search*/
+    .grid-layout .product{
+      padding-bottom: 10px;
+      border-bottom: 1px solid lightgray;
+    }
+    .grid-layout .product__image{
+      width: 70px;
+      float: left;
+      margin-right: 10px;
+    }
+    .grid-layout .product__image img {
+      width: 70px;
+      height: 70px;
+      border-radius: 2px;
+    }
+    .grid-layout .product__title h5, .product__title h5 a {
+      line-height: 18px;
+    }
+    /*woocommerce addition products*/
+    .addition-product .owl-item .product{
+      padding: 8px !important;
+    }
+    /* system style */
+    .p0-important.vc_column_container  .vc_column-inner{
+      padding: 0 0 0 15px!important;
+    }
+    .page-id-6713 .site-title, .page-id-6713 .pvc_stats, .is-home .pvc_stats{
+      display: none;
+    }
+  }
+

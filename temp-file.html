@@ -1,0 +1,33 @@
+		    						// $category_id = array(250,251);
+								    // // получаем категории товаров
+								    // $categories = get_the_terms( $product->id, 'product_cat' );
+								    // // проверяем принадлежность товара к вышеуказанным категориям по id
+								    // $product_in_category = false;
+								    // foreach ($categories as $item) {
+								    //     if (in_array((int)$item->term_id, $category_id)) {
+								    //         $product_in_category = true;
+								    //         break;
+								    //     }  
+								    //  } 
+								    // if ($product_in_category) {
+								    //     echo 'Товар входит в категории';
+								    // }
+								    // else echo do_shortcode( '[contact-form-7 id="6527" title="consultation"]' ); 
+
+
+при нажатии "оставить отзыв" - открывается или модальное окно, или новая вкладка, там текстовый редактор и пользователь просто пишет текст, потом отправляет и он отображается в админке, далее администратор его просматривает/редактирует и переносит на страницу адвоката.
+Или же можно сделать форму, в которой будут конкретные поля-вопросы, на основе которых человек и будет оставлять свой отзыв. в этом случае самый простой вариант, это отправлять эту форму администратору на почту, а но я не уверен на сколько это удобно будет
+
+
+<div class="vc_row wpb_row vc_inner vc_row-fluid contact-form" id="callback">
+	<div class="wpb_column vc_column_container vc_col-sm-6 col-sm-6 contact-form__name" >
+		[text* your-name placeholder "Ваше имя"] 
+	</div>
+	<div class="wpb_column vc_column_container vc_col-sm-6 col-sm-6 contact-form__phone"> 
+		[tel* your-tel placeholder "Ваш телефон"]
+	</div>
+	<div class="wpb_column vc_column_container vc_col-sm-12 col-sm-12 contact-form__message">
+		[textarea your-message placeholder "Опишите вашу ситуацию"]
+	</div>
+        [submit "Получить бесплатную консультацию"]
+</div>

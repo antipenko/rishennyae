@@ -1,0 +1,112 @@
+/*
+Theme Name: WR Nitro
+Theme URI: http://www.woorockets.com/themes/nitro
+Author: WooRockets Team
+Author URI: http://www.woorockets.com/
+Description: Nitro - the only WordPress eCommerce theme you will need for any WooCommerce projects. Nitro theme comes with ready to use layouts for different ecommerce industries such as fashion, electronics, furniture, digital, sports, jewelry and other. Nitro represents what WooCommerce customers want to see in a theme including intuitive design (UX), robust performance (loading speed) and eCommerce functionalities (boosting sales).
+Version: 1.0.5
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wr-nitro
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-header, custom-background, custom-menu, editor-style, featured-images, microformats, post-formats
+
+The stylesheets of Nitro are located in assets/woorockets/css.
+IMPORTANT : If you write your CSS code below, it will be deleted when you'll update the theme.
+*/
+/* Для отображения на карточках товаров надписи "Бесплатно",
+	небходимо закоментировать следующую инструкцию.
+ */
+.product__badge.free {
+	display: none;
+}
+
+.form-callBack .wpcf7-form{ position:relative; } 
+.form-callBack .wpcf7-form .wpcf7-validates-as-tel{ background: transparent; } 
+.form-callBack .wpcf7-form .wpcf7-submit{ position: absolute; top: 0; right: 0; width: 40px; height: 39px; background: transparent; }
+/*Найти в php и убрать их отображение из html на страницах page.php . slug ../product/name */
+.p-single-nav{
+	display:none;
+}
+.p-meta > .availability{
+	display: none;
+}
+/*style for breadcrumbs on page of products */
+.row.site-title__p0{
+	padding-bottom: 0;
+}
+
+span a, h1 a, h2 a, h3 a, h4 a, h5 a{
+	text-decoration:underline;
+}
+
+/* grid */
+.col-sm-6{
+	width: 50%;
+	float: left;
+}
+.wpcf7{
+	   /* min-height: 300px; */
+
+}
+
+#shop-detail .wpcf7{
+	margin-bottom: 0;
+    background-image: url(http://rishennyae.com/wp-content/uploads/2017/06/Forma-zahvata-2.png?id=6818) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    min-height: 300px;
+}
+/* #shop-detail .wpcf7-form{
+	width: 60%;
+	float: right;
+	padding: 20px 0; 
+} */
+/* #shop-detail .contact-form textarea  */
+.contact-form textarea 
+{
+    height: 50px;
+    margin: 20px 0;
+}
+/* #shop-detail .contact-form__name input, #shop-detail .contact-form__phone input  */
+.wpcf7-form .contact-form__name input:not([type="submit"]):not([type="button"]):not(.submit):not(.button):not(.extenal-bdcl),
+.wpcf7-form .contact-form__phone input:not([type="submit"]):not([type="button"]):not(.submit):not(.button):not(.extenal-bdcl)
+{
+    width: 140px;
+    padding: 10px;
+    background-color: #fff  !important;
+    border-color: #ebebeb  !important;
+    border-radius: 3px;
+}
+.wpcf7-form .contact-form textarea {
+    height: 50px ;
+    margin: 20px 0;
+    background-color: #fff  !important;
+    border-color: #ebebeb  !important;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.min-height200{
+	min-height: 200px;
+}
+
+.wpcf7-form .wr-btn-solid, .wpcf7-form  .button, .wpcf7-form .submit, .min-height200 .wpcf7-form input[type="submit"]:not(.wr-btn-outline), .wpcf7-form a.button_sg{
+	background-image:linear-gradient(to bottom, #74ade3 5%, #3556ba 100%);
+}
+.wpcf7-form .wr-btn-solid:hover, .wpcf7-form .button:hover, .wpcf7-form .submit:hover, .min-height200 .wpcf7-form input[type="submit"]:not(.wr-btn-outline):hover, .wpcf7-form a.button_sg:hover{
+	background-image:linear-gradient(to bottom, #3556ba 5%, #74ade3 100%);
+}
+
+
+
+#meta-category{
+	min-width: 0;
+	width: auto;
+}
+.product-share{
+	padding-right: 65px;
+}
+#report_abuse{
+	display: none;
+}

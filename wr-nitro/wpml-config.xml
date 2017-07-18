@@ -1,0 +1,34 @@
+<wpml-config>
+	<custom-fields>
+		<custom-field action="translate">format_quote_content</custom-field>
+		<custom-field action="ignore">format_quote_author</custom-field>
+		<custom-field action="ignore">header_layout</custom-field>
+		<custom-field action="copy">format_video_url</custom-field>
+		<custom-field action="copy">format_audio_url</custom-field>
+		<custom-field action="ignore">portfolio_time</custom-field>
+		<custom-field action="ignore">wr_page_title_padding_top</custom-field>
+		<custom-field action="ignore">wr_page_title_padding_bottom</custom-field>
+		<custom-field action="ignore">wr_page_title_min_height</custom-field>
+	</custom-fields>
+	<custom-types>
+		<custom-type translate="1">nitro-gallery</custom-type>
+	</custom-types>
+	<taxonomies>
+		<taxonomy translate="1">gallery_cat</taxonomy>
+		<taxonomy translate="1">gallery_tag</taxonomy>
+	</taxonomies>
+	<admin-texts>
+		<key name="nitro_customize">
+			<key name="blogname" />
+			<key name="blogdescription" />
+			<key name="custom_css">
+			<key name="custom_js" />
+			<key name="under_construction_title">
+			<key name="under_construction_message" />
+			<key name="wc_archive_page_title_content"/>
+			<key name="wc_thankyou_content" />
+			<key name="page_404_content" />
+			<key name="footer_bot_text">
+		</key>
+	</admin-texts>
+</wpml-config>
