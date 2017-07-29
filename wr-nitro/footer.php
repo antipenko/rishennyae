@@ -33,7 +33,9 @@ $wr_sidebar_5 = $wr_nitro_options['footer_sidebar_5'];
 		fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
 
-	<div class="fb-comments" data-href="http://rishennyae.com" data-numposts="5"></div>
+	<!-- <div class="fb-comments" data-href="http://rishennyae.com" data-numposts="5"></div> -->
+
+	<div class="fb-comments" data-href="<?php get_the_permalink(); ?>" data-num-posts="20" data-width="585"></div>
 
 </section>
 <footer id="footer" class="<?php

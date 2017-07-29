@@ -85,7 +85,7 @@ if ( ! empty( $sidebar ) && is_active_sidebar( $sidebar ) ) {
 									</div>
 
 									<?php 
-									$category_id = array(250,251);
+									$category_id = array(249);
 								    // // получаем категории товаров
 									$categories = get_the_terms( $product->id, 'product_cat' );
 								    // проверяем принадлежность товара к вышеуказанным категориям по id

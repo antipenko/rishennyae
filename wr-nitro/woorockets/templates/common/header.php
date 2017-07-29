@@ -1148,6 +1148,7 @@ $wr_nitro_header_html[] = '<header class="' . ( is_customize_preview() ? 'custom
 
 												if( $wr_hb_item['logoImageRetina'] ) {
 													$wr_logo_retina = esc_url( $wr_hb_item['logoImageRetina'] );
+													echo "$wr_logo_retina";
 												}
 
 												$wr_alt = ' alt="' . esc_attr( get_option( 'blogname' ) ) . '" ';
